@@ -5,7 +5,8 @@
   "description": "Api created with express with Swagger documentatino.",
   "main": "server.js",
   "scripts": {
-    "test": "DEBUG=true nyc mocha ./tests/**/*.test.js --exit --inspect=0.0.0.0:9229 --timeout 120000",
+    "test": "mocha",
+    "test-with-coverage": "nyc --reporter=text mocha",
     "start": "node server.js"
   },
   "keywords": [
@@ -21,6 +22,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.1",
+    "express-routes-versioning": "^1.0.1",
     "install": "^0.13.0",
     "jsonwebtoken": "^8.5.1",
     "msnodesqlv8": "^2.0.11",

@@ -12,7 +12,7 @@ import logger from '../ChallengeApi/logger.cjs';
 
 
 const require = createRequire(import.meta.url);
-
+require("dotenv").config();
 const swaggerUi = require('swagger-ui-express');
 
 //const swaggerUi = require(‘swagger-ui-express’),
@@ -27,23 +27,7 @@ const fs = require('fs');
 
 
 require("dotenv").config();
-//const config = require('./config.cjs');
 
-/* const swaggerOptions = {
-    swaggerDefinition: {
-        "swagger": "2.0",
-        "info": {
-            "version": "1.0.0",
-            "title": "MIND Teams Challenge",
-            "contact": {
-                name: "Amazing Developer"
-            },
-            "servers": ["http://localhost:40000"]
-        }
-    },
-    //['routes/*.js]
-    apis: ["server.js"]
-}; */
 
 const swaggerDocument = require('./swagger.json');
 //const swaggerDocs = swaggerJsdoc(swaggerjson);
@@ -62,7 +46,12 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 const path = require('path');
 const __dirname = path.resolve(path.dirname(''));
 const log_file_err = fs.createWriteStream(__dirname + '/error.log', { flags: 'a' });
-
+const { Sequelize } = require('sequelize');
+// Option 2: Passing parameters separately (other dialects)
+const sequelize = new Sequelize('mindchallenge', 'sa', 'R0bertStrife', {
+    host: 'localhost',
+    dialect: 'mssql' /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
+});
 
 
 app.set('llave', process.env.JWT_KEY);
@@ -403,7 +392,54 @@ app.post('/api/runsp/', rutasProtegidas, function (req, res) {
 
 })
 
+// Simple user controller implementation.
+var users = [
+    { username: 'jamsesso', age: 20, gender: 'M' },
+    { username: 'bettycrocker', age: 20, gender: 'F' }
+];
+
+
+// Version 1 (Old)
+function findUser(req, res) {
+    res.json(users[req.params.id]);
+}
+
+// Version 2 (New & improved)
+function findUser2(req, res) {
+    if (!users.hasOwnProperty(req.params.id)) {
+        res.send(404);
+    }
+    else {
+        res.json(users[req.params.id]);
+    }
+}
+
+async function runQuerySequelize(req,res) {
+    const [results, metadata] = await sequelize.query("SELECT * FROM users");
+    res.send(results);
+}
+
+
+// Set up the routing.
+var v1 = express.Router();
+var v2 = express.Router();
+
+v1.use('/user', express.Router()
+    .get('/:id', findUser));
+
+v2.use('/user', express.Router()
+    .get('/:id', findUser2));
+
+
+v2.use('/runsp', express.Router()
+   .get('/:id',runQuerySequelize)); //falta sequelize
+
+
+app.use('/v1', v1);
+app.use('/v2', v2);
+app.use('/', v2); // Set the default version to latest.
+
 app.listen(port, function () {
     console.log(`RESTApi corriendo en el puerto: ${port}`);
-    logger.log('info', `RESTApi usando winston`);
+    //logger.log('info', `RESTApi usando winston`);
 });
