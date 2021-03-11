@@ -1076,3 +1076,209 @@ info: run query: GetProfile 2 {"timestamp":"2021-03-11T08:13:44.356Z"}
 info: DBOperation [object Object] {"timestamp":"2021-03-11T08:13:44.558Z"}
 info: run query: GetProfile 2 {"timestamp":"2021-03-11T08:17:06.814Z"}
 info: DBOperation [object Object] {"timestamp":"2021-03-11T08:17:07.008Z"}
+info: run query: GetUser 1 {"timestamp":"2021-03-11T18:53:45.860Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T18:53:45.965Z"}
+info: run query: GetUser 2 {"timestamp":"2021-03-11T18:53:54.232Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T18:53:54.319Z"}
+info: run query: GetProfile 2 {"timestamp":"2021-03-11T18:53:57.611Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T18:53:57.780Z"}
+info: run query: GetProfile 2 {"timestamp":"2021-03-11T19:13:49.781Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:13:49.908Z"}
+info: run query: GetProfile 2 {"timestamp":"2021-03-11T19:15:46.053Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:15:46.144Z"}
+info: run query: GetProfile 2 {"timestamp":"2021-03-11T19:15:58.189Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:15:58.327Z"}
+info: run query: GetProfile 2 {"timestamp":"2021-03-11T19:16:22.956Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:16:23.032Z"}
+info: run query: GetUser 1 {"timestamp":"2021-03-11T19:16:34.247Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:16:34.305Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-11T19:16:38.008Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:16:38.107Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T19:16:41.108Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:16:41.230Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T19:16:43.379Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:16:43.492Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T19:16:45.043Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:16:45.152Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T19:19:22.325Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:19:22.501Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T19:20:07.528Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:20:07.686Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T19:21:16.264Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:21:16.351Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T19:21:43.917Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:21:44.019Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T19:22:14.313Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:22:14.457Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T19:22:40.427Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:22:40.514Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T19:22:53.960Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:22:54.058Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T19:23:04.812Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:23:04.907Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T19:26:52.510Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T19:26:52.598Z"}
+info: run query: GetUser 1 {"timestamp":"2021-03-11T20:08:49.619Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:08:49.695Z"}
+info: run query: GetProfile 1 {"timestamp":"2021-03-11T20:09:14.575Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:09:14.677Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-11T20:09:32.599Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:09:32.773Z"}
+info: run query: GetProfile 1 {"timestamp":"2021-03-11T20:09:43.298Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:09:43.440Z"}
+info: run query: GetProfile 1 {"timestamp":"2021-03-11T20:10:18.615Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:10:18.789Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-11T20:10:21.929Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:10:22.113Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:10:23.857Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:10:24.024Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:10:27.262Z"}
+info: run query: GetAccount 10 {"timestamp":"2021-03-11T20:10:27.270Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:10:27.450Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:10:27.484Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:10:58.134Z"}
+info: run query: GetAccount 10 {"timestamp":"2021-03-11T20:10:58.149Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:10:58.432Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:10:58.472Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:11:21.617Z"}
+info: run query: GetAccount 10 {"timestamp":"2021-03-11T20:11:21.629Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:11:21.962Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:11:21.987Z"}
+info: run query: DeleteAccount 10 {"timestamp":"2021-03-11T20:11:26.236Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:11:26.383Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:11:27.989Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:11:28.130Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:11:41.247Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:11:41.419Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:11:50.852Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:11:51.138Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:11:53.784Z"}
+info: run query: GetAccount 9 {"timestamp":"2021-03-11T20:11:53.796Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:11:53.968Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:11:54.000Z"}
+info: run query: DeleteAccount 9 {"timestamp":"2021-03-11T20:11:56.737Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:11:56.899Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:11:56.959Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:11:57.066Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:12:33.333Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:12:33.463Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:29:08.677Z"}
+info: run query: GetAccount 8 {"timestamp":"2021-03-11T20:29:08.690Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:29:08.893Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:29:08.924Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:29:34.956Z"}
+info: run query: GetAccount 8 {"timestamp":"2021-03-11T20:29:34.970Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:29:35.199Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:29:35.257Z"}
+info: run query: GetAccount 8 {"timestamp":"2021-03-11T20:29:41.931Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:29:41.940Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:29:42.191Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:29:42.249Z"}
+info: run query: GetUser 1 {"timestamp":"2021-03-11T20:37:05.624Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:37:05.680Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-11T20:37:09.417Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:37:09.545Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:37:14.522Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:37:14.632Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:37:18.060Z"}
+info: run query: GetAccount 8 {"timestamp":"2021-03-11T20:37:18.069Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:37:18.264Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:37:18.298Z"}
+info: run query: UpdateAccount 8,'Test','Test','Admin',4 {"timestamp":"2021-03-11T20:38:06.379Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:38:06.523Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:38:06.596Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:38:06.743Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:38:18.244Z"}
+info: run query: GetAccount 8 {"timestamp":"2021-03-11T20:38:18.251Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:38:18.453Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:38:18.495Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:38:20.618Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:38:20.750Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:38:22.233Z"}
+info: run query: GetAccount 8 {"timestamp":"2021-03-11T20:38:22.246Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:38:22.451Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:38:22.497Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:38:23.950Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:38:24.086Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:38:25.230Z"}
+info: run query: GetAccount 8 {"timestamp":"2021-03-11T20:38:25.245Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:38:25.444Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:38:25.472Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:38:27.942Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:38:28.062Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:42:25.990Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:42:26.166Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:43:36.952Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:43:37.090Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:44:50.880Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:44:51.020Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:45:36.591Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:45:36.713Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:45:44.483Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:45:44.633Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:46:48.819Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:46:49.116Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:46:55.258Z"}
+info: run query: GetAccount 4 {"timestamp":"2021-03-11T20:46:55.265Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:46:55.517Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:46:55.546Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:47:26.722Z"}
+info: run query: GetAccount 4 {"timestamp":"2021-03-11T20:47:26.739Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:47:27.000Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:47:27.084Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:48:01.296Z"}
+info: run query: GetAccount 4 {"timestamp":"2021-03-11T20:48:01.315Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:48:01.717Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:48:01.834Z"}
+info: run query: DeleteAccount 4 {"timestamp":"2021-03-11T20:48:22.064Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:48:22.296Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:48:22.358Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:48:22.516Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:53:42.752Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:53:42.936Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:53:55.908Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:53:56.079Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:54:32.957Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:54:33.119Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:55:08.903Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:55:09.033Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:55:22.557Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:55:22.701Z"}
+info: run query: SaveAccount 'test','test','test',5 {"timestamp":"2021-03-11T20:55:31.661Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:55:31.817Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:55:36.731Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:55:36.963Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:56:13.604Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:56:13.765Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:56:46.821Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:56:47.036Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:56:57.701Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:56:57.896Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:57:14.180Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:57:14.336Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:57:27.049Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:57:27.210Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-11T20:57:28.583Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:57:28.755Z"}
+info: run query: SaveAccount 'some','somje','some',2 {"timestamp":"2021-03-11T20:57:38.720Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:57:38.918Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T20:57:38.980Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T20:57:39.176Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T21:00:05.341Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T21:00:05.522Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-11T21:00:35.376Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T21:00:35.569Z"}
+info: run query: GetUser 1 {"timestamp":"2021-03-11T21:23:39.293Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T21:23:39.359Z"}
+info: run query: GetProfile 1 {"timestamp":"2021-03-11T21:23:45.506Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T21:23:45.637Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-11T21:23:48.495Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T21:23:48.646Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-11T21:24:19.347Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T21:24:19.489Z"}
+info: run query: GetUser 3 {"timestamp":"2021-03-11T21:27:12.787Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T21:27:12.844Z"}
+info: run query: GetUser 3 {"timestamp":"2021-03-11T21:27:45.620Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T21:27:45.684Z"}
+info: run query: GetProfile 3 {"timestamp":"2021-03-11T21:27:47.993Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-11T21:27:48.083Z"}
