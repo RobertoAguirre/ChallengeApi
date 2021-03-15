@@ -1,18 +1,3 @@
-//import swaggerUi from 'swagger-ui-express';
-/* import express from 'express';
-import bodyParser from 'body-parser';
-import swaggerJsdoc from 'swagger-jsdoc';
-import sql from 'mssql';
-import jwt from 'jsonwebtoken';
-import { createRequire } from 'module';
-import config from '../ChallengeApi/config.cjs';
-import logger from '../ChallengeApi/logger.cjs'; */
-//import logger from '../ChallengeApi/logger.js';
-
-
-
-/* const require = createRequire(import.meta.url); */
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const swaggerJsdoc = require('swagger-jsdoc');
@@ -20,13 +5,10 @@ const sql = require('mssql');
 const jwt = require('jsonwebtoken');
 const config = require('./config');
 const logger = require('./logger');
-
+const { Sequelize } = require('sequelize');
 require("dotenv").config();
 const swaggerUi = require('swagger-ui-express');
 
-//const swaggerUi = require(‘swagger-ui-express’),
-
-//var sql = require("mssql/msnodesqlv8");
 const swaggerjson = require('../ChallengeApi/swagger.json');
 const fileUpload = require('express-fileupload');
 const nodemailer = require('nodemailer');
@@ -55,7 +37,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 const path = require('path');
 //const __dirname = path.resolve(path.dirname(''));
 const log_file_err = fs.createWriteStream(__dirname + '/error.log', { flags: 'a' });
-const { Sequelize } = require('sequelize');
+
 // Option 2: Passing parameters separately (other dialects)
 const sequelize = new Sequelize('mindchallenge', 'sa', 'R0bertStrife', {
     host: 'localhost',
@@ -135,7 +117,7 @@ function sendEmail(mailInfo) {
             service: 'gmail',
             auth: {
                 user: 'roberto.aguirre.rodriguez@gmail.com',
-                pass: 'R0bertStrife'
+                pass: '********'
             }
         });
 
@@ -218,7 +200,12 @@ app.get('/api/hello', function (req, res) {
 });
 
 module.exports = {
-    greetings:greetings
+    greetings:greetings,
+    sendEmail:sendEmail,
+    getConnectionString:getConnectionString,
+    findUser:findUser,
+    execSql:execSql
+    
 }
 function greetings (name){
     return `Hello ${name}`;
