@@ -5,7 +5,7 @@ const sql = require('mssql');
 const jwt = require('jsonwebtoken');
 const config = require('./config');
 const logger = require('./logger');
-const { Sequelize } = require('sequelize');
+//const { Sequelize } = require('sequelize');
 require("dotenv").config();
 const swaggerUi = require('swagger-ui-express');
 
@@ -15,6 +15,8 @@ const nodemailer = require('nodemailer');
 const bcrypt = require('bcrypt');
 const cors = require("cors");
 const fs = require('fs');
+const serverV2 = require('./serverV2')
+
 
 
 require("dotenv").config();
@@ -38,11 +40,7 @@ const path = require('path');
 //const __dirname = path.resolve(path.dirname(''));
 const log_file_err = fs.createWriteStream(__dirname + '/error.log', { flags: 'a' });
 
-// Option 2: Passing parameters separately (other dialects)
-const sequelize = new Sequelize('mindchallenge', 'sa', 'R0bertStrife', {
-    host: 'localhost',
-    dialect: 'mssql' /* one of 'mysql' | 'mariadb' | 'postgres' | 'mssql' */
-});
+
 
 
 app.set('llave', process.env.JWT_KEY);
@@ -88,9 +86,9 @@ rutasProtegidas.use((req, res, next) => {
             }
         });
     } else {
-        res.send(401, 'Token no proveída');
+        res.send(401, 'Token no provista');
         /*   res.send({
-              mensaje: 'Token no proveída.'
+              mensaje: 'Token no provista.'
           }); */
     }
 });
@@ -204,7 +202,8 @@ module.exports = {
     sendEmail:sendEmail,
     getConnectionString:getConnectionString,
     findUser:findUser,
-    execSql:execSql
+    execSql:execSql,
+    buildQuery:buildQuery
     
 }
 function greetings (name){
@@ -364,7 +363,7 @@ app.post('/api/authenticate', async (req, res) => {
 
         //return { success: result };
     } catch (err) {
-
+        logger.log('info', `${err}`);
         res.send({ success: "OK", access: false, message: "Usuario no encontrado", error: err });
         return { err: err };
     } finally {
@@ -388,6 +387,30 @@ app.post('/api/runsp/', rutasProtegidas, function (req, res) {
     });
 
 })
+/// ENDPOINTS FOR VERSION 2
+app.post('/api/v2/runsp/', function (req, res) {
+    let ev = req.body;
+    let sqlquery = buildQuery(ev.sp, ev.params);
+    let connection = getConnectionString(ev.appname);
+     serverV2.runsp(req,res,sqlquery,connection);
+})
+
+app.get('/api/v2/simpleSum/:n1/:n2',function(req,res){
+    let n1 = req.params.n1;
+    let n2 = req.params.n2;
+    serverV2.simpleSum(req,res,n1,n2);
+
+})
+
+app.post('/api/v2/sequelize/', function (req, res) {
+    let ev = req.body;
+     serverV2.runQuerySequelize(req,res);
+})
+
+
+
+//////////////////////////////////
+
 
 // Simple user controller implementation.
 var users = [
@@ -411,32 +434,11 @@ function findUser2(req, res) {
     }
 }
 
-async function runQuerySequelize(req,res) {
-    const [results, metadata] = await sequelize.query("SELECT * FROM users");
-    res.send(results);
-}
 
 
-// Set up the routing.
-var v1 = express.Router();
-var v2 = express.Router();
 
-v1.use('/user', express.Router()
-    .get('/:id', findUser));
-
-v2.use('/user', express.Router()
-    .get('/:id', findUser2));
-
-
-v2.use('/runsp', express.Router()
-   .get('/:id',runQuerySequelize)); //falta sequelize
-
-
-app.use('/v1', v1);
-app.use('/v2', v2);
-app.use('/', v2); // Set the default version to latest.
 
 app.listen(port, function () {
     console.log(`RESTApi corriendo en el puerto: ${port}`);
-    //logger.log('info', `RESTApi usando winston`);
+    logger.log('info', `RESTApi usando winston`);
 });

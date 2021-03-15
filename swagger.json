@@ -9,79 +9,150 @@
             "url": "https://opensource.org/licenses/MIT"
         }
     },
+    "components":{
+        "securitySchemes":{
+            "bearerAuth":{
+                "type":"http",
+                "scheme":"bearer",
+                "bearerFormat":"JWT"
+            }
+        }
+    },
+    "security":{
+        "bearerAuth":[]
+    },
     "host": "localhost:40000",
     "basePath": "/api",
     "paths": {
-        "/register": {
-            "post": {
-                "parameters": [
-                    {
-                        "name": "user",
-                        "in": "body",
-                        "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "name": "pass",
-                        "in": "body",
-                        "required": true,
-                        "type": "string"
-                    }
-                ]
-            }
-        },
         "/authenticate": {
             "post": {
                 "parameters": [
                     {
-                        "name": "user",
+                        "name": "objeto",
                         "in": "body",
                         "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "name": "pass",
-                        "in": "body",
-                        "required": true,
-                        "type": "string"
+                        "type": "string",
+                        "example":{"appname":"MINDCHALLENGE","params":{"userName":"yourusername","pass":"yourpassword"}}
                     }
-                ]
+                ],
+                "description": "Método para autenticación",
+                "responses": {
+                    "200": {
+                        "description": "ok"
+                    },
+                    "401":{
+                        "description": "unauthorized"
+                    }
+                }
             }
         },
         "/runsp": {
             "post": {
                 "parameters": [
                     {
-                        "name": "appname",
-                        "in": "body",
+                        "name": "Authorization",
+                        "in": "header",
                         "required": true,
-                        "type": "string"
+                        "type": "string",
+                        "example":{"authorization":"sf34x5g..."}
                     },
                     {
-                        "name": "sp",
+                        "name": "objeto",
                         "in": "body",
                         "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "name": "params",
-                        "in": "body",
-                        "required": true,
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
+                        "type": "string",
+                        "example":{"appname":"MINDCHALLENGE","sp":"GetAllUsers","params":[]}
                     }
-                ]
+                ],
+                "description": "Ejecución de SPs protegida con tedious mssql",
+                "responses": {
+                    "200": {
+                        "description": "ok"
+                    },
+                    "401":{
+                        "description": "unauthorized"
+                    }
+                }
             }
         },
         "/hello": {
             "get": {
                 "parameters": [],
                 "description": "Endpoint de prueba",
-                "responses":{
-                    "200":{
-                        "description":"ok"
+                "responses": {
+                    "200": {
+                        "description": "ok"
+                    }
+                }
+            }
+        },
+        "/v2/runsp/": {
+            "post": {
+                "parameters": [
+                    {
+                        "name": "objeto",
+                        "in": "body",
+                        "required": true,
+                        "type": "string",
+                        "example":{"appname":"MINDCHALLENGE","sp":"GetAllUsers","params":[]}
+                    }
+                ],
+                "description": "Ejecución de SPs sin token usando tedious mssql",
+                "responses": {
+                    "200": {
+                        "description": "ok"
+                    }
+                }
+            }
+        },
+        "/v2/simpleSum/{n1}/{n2}": {
+            "get": {
+                "parameters": [
+                    {
+                        "name": "n1",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "n2",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "description": "Suma sencilla en version 2",
+                "responses": {
+                    "200": {
+                        "description": "ok"
+                    }
+                }
+            }
+        },
+        "/v2/sequelize/": {
+            "post": {
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "sp",
+                        "in": "body",
+                        "required": true,
+                        "type": "string",
+                        "example":{"sp":"GetAllUsers"}
+                    }
+                ],
+                "description": "Ejecución de SPs sin token usando sequelize",
+                "responses": {
+                    "200": {
+                        "description": "ok"
                     }
                 }
             }

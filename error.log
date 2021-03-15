@@ -35,3 +35,75 @@ info: sendMail error: Error: Invalid login: 535-5.7.8 Username and Password not 
 info: run query: GetAllUsers  {"timestamp":"2021-03-15T05:40:08.959Z"}
 info: sendMail error: Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
 535 5.7.8  https://support.google.com/mail/?p=BadCredentials e190sm12384882pfh.115 - gsmtp {"timestamp":"2021-03-15T05:40:09.423Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T07:59:03.912Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T07:59:51.575Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T08:00:21.444Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T08:02:06.161Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T08:02:28.661Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T08:02:43.200Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T08:04:08.778Z"}
+info: run query: GetUser 3 {"timestamp":"2021-03-15T08:16:39.903Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T08:16:40.048Z"}
+info: run query: GetUser 1 {"timestamp":"2021-03-15T08:16:48.404Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T08:16:48.512Z"}
+info: run query: GetProfile 1 {"timestamp":"2021-03-15T08:16:52.684Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T08:16:52.825Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T08:16:55.229Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T08:16:55.350Z"}
+info: run query: GetAllAccounts  {"timestamp":"2021-03-15T08:16:57.421Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T08:16:57.535Z"}
+info: run query: GetTeams  {"timestamp":"2021-03-15T08:17:01.782Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T08:17:01.911Z"}
+info: run query: GetProfile 1 {"timestamp":"2021-03-15T08:17:04.569Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T08:17:04.718Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T08:17:06.083Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T08:17:06.202Z"}
+info: run query: GetUser 1 {"timestamp":"2021-03-15T08:17:07.887Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T08:17:08.030Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T08:17:11.884Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T08:17:12.158Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T09:22:57.828Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T09:23:36.171Z"}
+info: run query: undefined  {"timestamp":"2021-03-15T09:27:05.869Z"}
+info: run query: undefined  {"timestamp":"2021-03-15T09:29:10.198Z"}
+info: run query: undefined  {"timestamp":"2021-03-15T09:30:39.122Z"}
+info: run query: undefined  {"timestamp":"2021-03-15T09:33:01.050Z"}
+info: run query: undefined  {"timestamp":"2021-03-15T09:34:22.398Z"}
+info: run query: undefined  {"timestamp":"2021-03-15T09:37:21.067Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T09:45:29.371Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T09:48:04.423Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T09:51:57.627Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T09:52:46.547Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T09:52:56.356Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T09:53:58.256Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T09:55:55.440Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T09:57:25.640Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T09:58:07.809Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T10:02:02.882Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T10:13:50.426Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T10:16:50.990Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T10:17:53.833Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T10:20:36.881Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T10:21:29.263Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T10:21:33.178Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T10:22:20.004Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T10:22:25.129Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T10:22:25.267Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T10:22:44.038Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T10:23:15.774Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T10:24:16.364Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T10:25:32.875Z"}
+info: run query: GetUser 3 {"timestamp":"2021-03-15T10:26:06.320Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T10:26:06.381Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T10:26:21.782Z"}
+info: run query: GetUser 3 {"timestamp":"2021-03-15T10:26:28.332Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T10:26:28.473Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T10:26:39.458Z"}
+info: run query: GetUser 3 {"timestamp":"2021-03-15T10:26:45.699Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T10:26:45.753Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T10:27:15.535Z"}
+info: run query: GetUser 3 {"timestamp":"2021-03-15T10:27:20.172Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T10:27:20.201Z"}
+info: RESTApi usando winston {"timestamp":"2021-03-15T10:27:33.569Z"}
+info: run query: GetAllUsers  {"timestamp":"2021-03-15T10:28:09.829Z"}
+info: DBOperation [object Object] {"timestamp":"2021-03-15T10:28:09.883Z"}
