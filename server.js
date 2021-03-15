@@ -1,17 +1,26 @@
 //import swaggerUi from 'swagger-ui-express';
-import express from 'express';
+/* import express from 'express';
 import bodyParser from 'body-parser';
 import swaggerJsdoc from 'swagger-jsdoc';
 import sql from 'mssql';
 import jwt from 'jsonwebtoken';
 import { createRequire } from 'module';
 import config from '../ChallengeApi/config.cjs';
-import logger from '../ChallengeApi/logger.cjs';
+import logger from '../ChallengeApi/logger.cjs'; */
 //import logger from '../ChallengeApi/logger.js';
 
 
 
-const require = createRequire(import.meta.url);
+/* const require = createRequire(import.meta.url); */
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const swaggerJsdoc = require('swagger-jsdoc');
+const sql = require('mssql');
+const jwt = require('jsonwebtoken');
+const config = require('./config');
+const logger = require('./logger');
+
 require("dotenv").config();
 const swaggerUi = require('swagger-ui-express');
 
@@ -44,7 +53,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 
 const path = require('path');
-const __dirname = path.resolve(path.dirname(''));
+//const __dirname = path.resolve(path.dirname(''));
 const log_file_err = fs.createWriteStream(__dirname + '/error.log', { flags: 'a' });
 const { Sequelize } = require('sequelize');
 // Option 2: Passing parameters separately (other dialects)
@@ -203,19 +212,20 @@ function buildQuery(sp, params) {
     logger.log('info', `run query: ${query}`);
     return query;
 }
-//Routes
-/**
- * @swagger
- * /hello:
- *  get:
- *    description: Endpoint básico para probar funcionamiento
- *    responses: 
- *      '200':
- *       description: A successful response 
- */
+
 app.get('/api/hello', function (req, res) {
     res.send('Inicio pruebas REST');
 });
+
+module.exports = {
+    greetings:greetings
+}
+function greetings (name){
+    return `Hello ${name}`;
+}
+
+
+
 
 //creacion de registro de usuario con clave usuario encriptado
 app.post('/api/register', (req, res) => {
